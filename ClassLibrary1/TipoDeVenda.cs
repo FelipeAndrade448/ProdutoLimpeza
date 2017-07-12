@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Class1
+    public enum TipoDeVenda
     {
+        Avista = 1,
+        Parcelado = 2
     }
 }
