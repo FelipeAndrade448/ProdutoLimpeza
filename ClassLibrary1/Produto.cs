@@ -8,10 +8,12 @@ namespace ProdutoLimpeza
 {
     public class Produto
     {
+        #region Propriedades
+
         public int Id { get; set; }
 
         [Required]
-        public string Codigo { get; set; }
+        public string CodigoProduto { get; set; }
 
         [Required]
         public string Nome { get; set; }
@@ -23,13 +25,43 @@ namespace ProdutoLimpeza
         public DateTime DataVencimento { get; set; }
 
         [Required]
-        public double Preco { get; set; }
+        public double PrecoProduto { get; set; }
 
         [Required]
-        public int QuantidadeProduto { get; set; }
+        public int ProdutoEmEstoque { get; set; }
 
-        public TipoCategoria TipoDeCategoria { get; set; }
+        public Categoria Categoria { get; set; }
 
         public Fornecedor Fornecedor { get; set; }
+
+        #endregion
+
+        #region Métodos
+        public bool ValidaEstoque(int quantidadeProduto)
+        {
+            if (quantidadeProduto <= 0 )
+            {
+                throw new System.ArgumentException("Produto com quantidade Zero ou Negativo");
+            }
+            else if (quantidadeProduto > ProdutoEmEstoque)
+            {
+                throw new System.ArgumentException("Quantidade de produto maior que a disponível em estoque");
+            }                
+            else
+                return true;
+        }
+
+        public bool ValidaPrecoProduto()
+        {
+            if (PrecoProduto <= 0)
+            {
+                return false;
+                throw new System.ArgumentException("Preço Zero ou negativo");
+            }                
+            else
+                return true;
+        }
+
+        #endregion
     }
 }

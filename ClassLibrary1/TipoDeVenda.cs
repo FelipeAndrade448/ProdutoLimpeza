@@ -9,6 +9,7 @@ namespace ClassLibrary1
     public enum TipoDeVenda
     {
         Avista = 1,
-        Parcelado = 2
+        Parcelado = 2,
+        Invalido = 3
     }
 }

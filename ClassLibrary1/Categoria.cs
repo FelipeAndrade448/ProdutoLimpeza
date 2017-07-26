@@ -10,8 +10,10 @@ namespace ProdutoLimpeza
     {
         public int Id { get; set; }
 
-        public TipoCategoria TipoDeCategoria { get; set; }
+        [Required]
+        public string Codigo { get; set; }
 
-        public List<Produto> ListaDeProdutos = new List<Produto>();
+        [Required]
+        public string Nome { get; set; }
     }
 }

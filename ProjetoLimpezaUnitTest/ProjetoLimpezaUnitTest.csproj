@@ -48,13 +48,24 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CancelaVendaUnitTest.cs" />
-    <Compile Include="EfetuarVendaUnitTest.cs" />
-    <Compile Include="PedidoUnitTest.cs" />
-    <Compile Include="PreencherPedido.cs" />
+    <Compile Include="CancelaPedidoUnitTest.cs" />
+    <Compile Include="CalcularPedidoUnitTest.cs" />
+    <Compile Include="BaseTest.cs" />
+    <Compile Include="CancelarPedidoCanceladoUnitTest.cs" />
+    <Compile Include="CancelarPedidoFaturadoUnitTest.cs" />
+    <Compile Include="CancelarPedidoSemItensUnitTest.cs" />
+    <Compile Include="FaturamentoClienteRuimSemLimiteUnitTest.cs" />
+    <Compile Include="FaturamentoPedidoCanceladoUnitTest.cs" />
+    <Compile Include="FaturamentoRuimComLimiteUnitTest.cs" />
+    <Compile Include="FaturaPedidoUnitTest.cs" />
+    <Compile Include="FaturarComParcelaZeroUnitTest.cs" />
+    <Compile Include="FaturarComPrecoZeroOuNegativoUnitTest.cs" />
+    <Compile Include="FaturarPedidoSemAdicionarProdutoUnitTest.cs" />
+    <Compile Include="FazerPedidoUnitTest.cs" />
+    <Compile Include="FaturarProdutoZeradoOuNegativoUnitTest.cs" />
+    <Compile Include="ParcelamentoPedidoClienteStatusRuimComLimiteUnitTest.cs" />
+    <Compile Include="PedidoParceladoSemLimiteUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CancelarPedido.cs" />
-    <Compile Include="ValorVendaUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

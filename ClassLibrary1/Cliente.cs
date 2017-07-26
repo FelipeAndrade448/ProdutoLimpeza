@@ -20,6 +20,7 @@ namespace ProdutoLimpeza
         public double LimiteCredito { get; set; }
 
         private TipoStatusCliente tipoStatus = TipoStatusCliente.Bom;
+
         public TipoStatusCliente TipoStatus
         {
             get

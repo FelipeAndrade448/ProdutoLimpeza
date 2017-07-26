@@ -8,9 +8,9 @@ namespace ProdutoLimpeza
 {
     public enum StatusPedido
     {
-        Cancelado = 1,
-        Aberto = 2,
-        Faturado = 3,
-        Faturar = 4
+        Aberto = 1,
+        Cancelado = 2,
+        Faturar = 3,
+        Faturado = 4        
     }
 }

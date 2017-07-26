@@ -12,5 +12,8 @@ namespace ProdutoLimpeza
 
         [Required]
         public string NomeFantasia { get; set; }
+
+        [Required]
+        public string Cnpj { get; set; }
     }
 }
